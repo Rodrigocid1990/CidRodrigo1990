@@ -1,0 +1,207 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+li { 
+  list-style: none; 
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: nth($size , 10 );
+}
+
+input, button {
+    background: none;
+    border: none;
+    font: inherit;
+  }
+  
+  input {
+    width: 100%;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  html {
+    font-family: nth($font , 2 );
+    font-size: nth($rem , 1 );
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: nth($colors , 3 );
+    font-size: nth($rem , 5 );
+    line-height: 1,9;
+  }
+  
+
+  
+
+  
+  
+  
+  // TITULOS Y SUBTITULOS
+  .h1 {
+    font-size: nth($size , 18 );
+    color: nth($colors , 1 );
+    font-family: nth($font2 , 1 ), nth($font2 , 2 );
+    letter-spacing: nth($size , 5 );
+    line-height: 1;
+    text-align: center;
+  }
+  
+  .h2 {
+    font-size: nth($size , 17 );
+    color: nth($colors , 1 );
+    font-family: nth($font2 , 1), nth($font2 , 2 );
+    line-height: 1;
+    text-align: center;
+    top: nth($size , 1 );
+  }
+  
+  .h3 {
+    color: nth($colors , 1 );
+    font-family: nth($font2 , 1 ), nth($font2 , 2 );
+    font-weight: 800;
+    line-height: 1;
+  }
+  
+  :is(.h1, .h2, .h3, .card-price) .span {
+    display: inline-block;
+    color: nth($colors , 2 );
+  }
+  
+  
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    padding: nth($size , 10 );
+    font-size: nth($rem , 5 );
+    font-weight: 700;
+    align-items: center;
+    gap: nth($size , 5 );
+    transition: 0.25s ease;
+  
+    span {
+      color: nth($colors , 3 );
+      content: "";
+      inset: 0;
+      transform: skewX(-16deg);
+      padding: nth($size , 22 ), nth($size , 15 );
+      transition: 0.6s;
+      position: center;
+    }
+  
+    &:hover span {
+      color: nth($colors , 1 );
+    }
+  
+    &:active span {
+      transform: scale(0.9);
+    }
+  }
+  
+  
+  .skewBg {
+    position: relative;
+    z-index: 1;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      transform: skewX(-16deg);
+      background-color: nth($colors , 2 );
+      z-index: -1;
+      width: 150px;
+      padding: 35px 50px;
+    }
+  }
+  
+  .section-subtitle,
+  .section-title {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .section-subtitle {
+    color: nth($colors , 6 );
+    font-size: nth($size , 14 );
+    margin-block-end: nth($size , 9 );
+    top: nth($size , 1 );
+  }
+  
+  .section-title::after {
+    content: nth($img , 1 );
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  
+
+  .header {
+    position: relative;
+    min-height: nth($size , 2 );
+  
+    .header-bottom {
+      position: absolute;
+      top: nth($size , 3 );
+      left: 0;
+      width: 100%;
+      background-color: nth($colors , 4 );
+      padding-block: nth($size , 13 );
+      box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50);
+  
+      .container {
+        display: flex;
+        background-color: nth($colors , 4 );
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  
+    .logo {
+      color: nth($colors , 1 );
+      font-family: nth($font , 1 ),nth($font , 2 );
+      font-size: nth($rem , 8 );
+    }
+  
+    .navbar-toggler {
+      color: nth($colors , 1 );
+      font-size: nth($rem , 7 );
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 2.5rem;
+      cursor: pointer;
+      z-index: 1500;
+    }
+  
+    .navbar::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: nth($colors , 13 );
+      z-index: 1000;
+      opacity: 0;
+      transform: scale(0);
+      transition: opacity 0.5s;
+    }
+  }

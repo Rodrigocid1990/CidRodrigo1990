@@ -1,0 +1,122 @@
+/*FOOTER*/
+.footer {
+    color: nth($colors , 11 );
+  
+    &-top {
+      padding-block-end: nth($size , 19 );
+  
+      .container {
+        display: grid;
+        gap: nth($size , 16 );
+      }
+    }
+  
+    .logo {
+      margin-block-end: nth($size , 15 );
+    }
+  
+    .footer-text,
+    .contact-item {
+      font-size: nth($rem , 4 );
+      font-weight: 500;
+      line-height: 1.8;
+    }
+  
+    .footer-text {
+      margin-block-end: nth($size , 10 );
+    }
+  
+    .contact-item:not(:last-child) {
+      margin-block-end: nth($size , 9 );
+    }
+  
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+  
+      .contact-icon {
+        margin-block-start: nth($size , 4 );
+        font-size: nth($size , 11 );
+      }
+    }
+  
+    .footer-list-title {
+      position: relative;
+      color: nth($colors , 6 );
+      font-family: nth($font , 1 ), nth($font , 2 );
+      text-transform: uppercase;
+      font-weight: 800;
+      padding-block-end: nth($size , 12 );
+      margin-block-end: nth($size , 15 );
+    }
+  }
+  
+  
+  
+  .footer {
+    .footer-list-title::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: nth($size , 14 );
+      height: nth($size , 4 );
+      background-color: nth($colors , 2 );
+    }
+  
+    .footer-link {
+      font-size: 1.9rem;
+      max-width: max-content;
+      transition: 0.25s ease;
+      padding-block: nth($size , 8 );
+      font-weight: 500;
+  
+      &:is(:hover, :focus) {
+        color: nth($colors , 2 );
+        transform: translateX(5px);
+      }
+    }
+  
+    & .social-wrapper {
+      margin-block-end: nth($size , 16 );
+  
+      & .social-list {
+        display: flex;
+        gap: nth($size , 9 );
+  
+        & .social-link {
+          color: nth($colors , 1 );
+          padding: nth($size , 9 );
+          border-radius: nth($size , 3 );
+        }
+      }
+    }
+  }
+
+  /*MAPA*/
+
+  .mapa {
+    margin: 0 auto;
+    background-color: nth($colors , 1 );
+    border-radius: nth($size , 9 );
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    width: fit-content;
+  }
+
+  
+  /* COPYRIGHT */
+
+  .copyright {
+    font-size: nth($rem , 4 );
+    font-weight: 500;
+    line-height: 1.8;
+  }
+  
+  .copyright-link {
+    display: inline-block;
+    color: nth($colors , 2 );
+  }
+  

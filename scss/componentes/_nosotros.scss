@@ -1,0 +1,30 @@
+
+/*NOSOTROS*/
+
+
+.section-wrapper {
+    position: relative;
+    background-image: nth($img , 2 );
+    background-repeat: no-repeat;
+    background-color: nth($colors , 5 );
+    margin-block-start: nth($size , 20 );
+  
+    .box-container {
+      justify-content: center;
+      text-align: center;
+  
+      .box {
+        color: nth($colors , 6 );
+        font-size: nth($size , 13 );
+        margin-block-end: nth($size , 9 );
+        top: nth($size , 1 );
+      }
+    }
+  
+    .video {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+  }

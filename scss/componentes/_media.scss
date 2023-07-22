@@ -1,0 +1,655 @@
+/* TIPO DE MEDIA */
+
+ /* responsive para una pantalla de más de 375px */
+
+@media (min-width: 375px) {
+
+    .container {
+      max-width: nth($size , 21 );
+      width: 100%;
+      margin-inline: auto;
+    }
+
+    .section {
+      padding-block: nth($size , 26 );
+      display:flex;}
+  
+    a{
+      font-family: nth($font , 1 ), nth($font , 2 );
+    }
+
+    .h1{
+      font-family: nth($font2 , 1 ), nth($font2 , 2 );
+      letter-spacing: nth($size , 5 );
+      line-height: 1;
+      text-align: center;
+    }
+
+    p{
+      font-family: nth($font , 1 ), nth($font , 2 );
+    }
+    .h1 { font-size: nth($rem , 9 ); }
+
+
+    /*NAVBAR*/
+    .logo {
+      font-size: nth($rem ,10 );
+      color: nth($colors ,1 );
+    }
+  
+    .navbar {
+      justify-content: space-between;
+      box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+  
+      &-list {
+        position: relative;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        padding: 0;
+        justify-content: initial;
+        flex-direction: row;
+        transform: initial;
+        transition: initial;
+  
+        &-item {
+          margin: 0 1.6rem;
+          line-height: 1.7;
+        
+  
+          &-link {
+            font-size: nth($rem , 3 );
+  
+            &.active {
+              position: absolute;
+  
+              &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: nth($size , 2 );
+                background-color: nth($colors , 1 );
+                left: 0;
+                bottom: -3px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  
+    /*HEADER */
+
+    .header {
+      position: relative;
+      min-height: nth($size , 2 );
+    }
+    
+    .header-bottom {
+      position: absolute;
+      top: nth($size , 3 ) ;
+      left: 0;
+      width: 100%;
+      background-color: nth($colors , 4 );
+      padding-block: nth($size , 14 );
+      box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+    }
+    
+    .header-bottom .container {
+      display:flex;
+      background-color: nth($colors, 4 );
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .header-actions { gap: nth($size , 24 ); }
+    
+
+  
+    /* NOSOTROS */
+  
+    .search-container {
+      .search-field, .search-submit {
+        font-size: nth($rem , 11 );
+      }
+    }
+  
+    /* JUEGOS */
+  
+    .featured-game {
+      .scrollbar-item {
+        min-width: 90%;
+      }
+    }
+  
+    /* BLOG */
+
+    .blog {
+      background: linear-gradient(rgba(21, 21, 46, 0.5), rgba(21, 21, 46, 0.5)), nth($img , 3 ) ;
+      position: relative;
+      margin-block-start: nth($size , 25);
+    }
+
+    .blog {
+      .section-title {
+        color: nth($colors , 1 );
+      }
+    
+      .section-text {
+        color: nth($colors , 8 );
+        margin-block: nth($size , 16 ) nth($size , 17 );
+      
+       
+      
+      }}
+  
+    .blog-list {
+      grid-template-columns: 80%;
+      justify-content: center;
+      display: grid;
+      
+    }
+  
+    /* PRODUCTOS */
+
+    .shop {
+      position: relative;
+      background: linear-gradient(rgba(21, 21, 46, 0.5), rgba(21, 21, 46, 0.5)), nth($img , 3 ) repeat;
+      margin-block-start: nth($size , 26 );
+    }
+
+    .shop-list {
+      grid-template-columns: 80%;
+      justify-content: center;
+    }
+  
+    /* FOOTER */
+  
+    .footer-top {
+      .container {
+        grid-template-columns: 1fr 1fr;
+        display: block;
+      }
+    }
+  
+    .footer-brand,
+    .footer-wrapper {
+      grid-column: 1 / 1;
+    }
+  
+  }
+  
+
+
+ /* responsive para una pantalla de más de 576px */
+
+ @media (min-width: 576px) {
+
+    .container {
+      max-width: nth($size , 28 );
+      width: 100%;
+      margin-inline: auto;
+    }
+  
+    .h1 {
+      --fs-2: 7rem;
+      font-size: var(--fs-2);
+    }
+  
+    /* HEADER */
+
+    .header {
+      position: relative;
+      min-height: nth($size , 2 );
+    }
+    
+    .header-bottom {
+      position: absolute;
+      top: nth($size , 3 ) ;
+      left: 0;
+      width: 100%;
+      background-color: nth($colors , 4 );
+      padding-block: nth($size , 13 );
+      box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50);
+    }
+    
+    .header-bottom .container {
+      display:flex;
+      background-color: nth($colors , 4 );
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .header-actions {
+      gap: nth($size , 29 );
+    }
+  
+    /* NOSOTROS */
+  
+    .search-container {
+      & :is(.search-field, .search-submit) {
+        font-size: nth($rem , 11 );
+      }
+    }
+  
+    /* JUEGOS */
+  
+    .featured-game {
+      .scrollbar-item {
+        min-width: 50%;
+      }
+    }
+  
+    /* BLOG */
+
+    .blog{
+      background: linear-gradient(rgba(21, 21, 46, 0.5), rgba(21, 21, 46, 0.5)), nth($img , 3 ) repeat center;
+      position: relative;
+      margin-block-start: nth($size , 27);
+    }
+
+    .blog-list {
+      grid-template-columns: 75%;
+      justify-content: center;
+    }
+  
+    /* PRODUCTOS */
+  
+    .shop{
+      position: relative;
+      background: linear-gradient(rgba(21, 21, 46, 0.5), rgba(21, 21, 46, 0.5)), nth($img , 3 ) repeat;
+      margin-block-start: nth($size , 27);
+
+    }
+
+    .shop-list {
+      grid-template-columns: 74%;
+      justify-content: relative;
+    }
+  
+    /* FOOTER */
+  
+    .footer-top {
+      .container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  
+    .footer-brand,
+    .footer-wrapper {
+      grid-column: 1 / 3;
+    }
+  
+  }
+
+   /* responsive para una pantalla de más de 768px */
+
+   @media (min-width: 768px) {
+
+    .container {
+      max-width: nth($size , 30 );
+    }
+  
+    .scrollbar-item {
+      min-width: calc(50% - 15px);
+    }
+  
+    /* HERO */
+  
+    .hero-text {
+      max-width: 60ch;
+      margin-inline: auto;
+    }
+
+    .header {
+      position: relative;
+      min-height: nth($size , 2 );
+    }
+    
+    .header-bottom {
+      position: absolute;
+      top: nth($size , 3 ) ;
+      left: 0;
+      width: 100%;
+      background-color: nth($colors , 4 );
+      padding-block: nth($size , 13 );
+      box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50);
+    }
+    
+    .header-bottom .container {
+      display:flex;
+      background-color: nth($colors , 4 );
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .navbar {
+      justify-content: space-between;
+  
+      &-list {
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        padding: 0;
+        justify-content: initial;
+        flex-direction: row;
+        transform: initial;
+        transition: initial;
+  
+        &-item {
+          margin: 0 nth($rem , 13 );
+  
+          &-link {
+            font-size: nth($rem , 4 );
+  
+            &.active {
+              position: relative;
+  
+              &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: nth($size , 3 );
+                background-color: nth($colors , 1 );
+                left: 0;
+                bottom: -3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    /* BLOG */
+  
+    .blog-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    /* PRODUCTOS */
+  
+    .shop-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    /* FOOTER */
+  
+    .footer-brand,
+    .footer-wrapper {
+      grid-column: auto;
+    }
+  
+    .footer-bottom {
+      text-align: left;
+  
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: nth($size , 12 );
+      }
+    }
+  }
+  
+   /* responsive para una pantalla de más de 992px */
+
+   @media (min-width: 992px) {
+
+    .container {
+      max-width: nth($size , 31 );
+  
+      :is(.header, .hero, .live-match) & {
+        max-width: unset;
+      }
+    }
+  
+    .scrollbar-item {
+      min-width: calc(33.33% - 20px);
+    }
+
+    .section { padding-block: nth($size , 35 ) }
+  
+    /* HEADER */
+  
+    .header-top {
+      display: block;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      padding-block: nth($size , 12 );
+    }
+  
+    .header-top .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .social-title {
+      color: nth($colors , 1 );
+      font-family: nth($font , 1 ), nth($font , 2 );
+      font-size: nth($rem , 3 );
+      font-weight: 700;
+    }
+  
+    .nav-toggle-btn {
+      display: none;
+    }
+  
+    .navbar,
+    .navbar.active {
+      all: unset;
+      margin-inline: auto nth($size , 10 );
+    }
+  
+    .navbar-list {
+      display: block;
+    }
+  
+    .navbar-item:not(:last-child) {
+      border-block-end: none;
+    }
+  
+    .navbar-link {
+      color: nth($colors , 1 );
+      font-family: nth($font , 1 ), nth($font , 2 );
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      padding: nth($size , 10 ) nth($size , 12 );
+  
+      &::before {
+        display: block;
+        opacity: 0;
+        transition: 0.25s ease;
+      }
+  
+      &:is(:hover, :focus) {
+        background-color: transparent;
+        color: nth($colors , 10 );
+  
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  
+    /* INICIO */
+  
+    .hero {
+      text-align: left;
+    }
+  
+    .hero-banner {
+      display: block;
+    }
+  
+    .hero .container {
+      display: grid;
+      grid-template-columns: 1fr 0.9fr;
+      align-items: center;
+      gap: nth($size , 16 );
+    }
+  
+    .btn {
+      margin-inline: 0;
+    }
+  
+    /* NOSOTROS */
+  
+    .latest-game .has-scrollbar {
+      padding-block-end: 0;
+    }
+  
+    /* JUEGOS */
+  
+    .featured-game .scrollbar-item {
+      min-width: 33.33%;
+    }
+  
+    /* BLOG */
+  
+    .blog-list {
+      grid-template-columns: repeat(3, 1fr);
+      gap: nth($size , 14 );
+    }
+  
+    /* PRODUCTOS */
+  
+    .shop-list {
+      grid-template-columns: repeat(3, 1fr);
+      gap: nth($size , 14 );
+    }
+  
+    /* FOOTER */
+  
+    .footer .container {
+      grid-template-columns: 1fr 0.7fr 0.7fr;
+      column-gap: nth($size , 32 );
+      display: block;
+    }
+  }
+
+
+    /* responsive para una pantalla de más de 1200px */
+
+    @media (min-width: 1200px) {
+
+        .container,
+        :is(.header, .hero, .live-match) .container {
+          max-width: nth($size , 33 );
+        }
+      
+        .h1 {
+          --fs-2: 7.5rem;
+          font-size: nth($size , 18 );
+        }
+
+        .h2 {
+          font-size: nth($size , 17 );
+          color: nth($colors , 1 );
+          font-family: nth($font2 , 1 ), nth($font2 , 2 );
+          line-height: 1;
+          text-align: center;
+          margin-block-start: nth($size , 12 );
+        }
+      
+        .scrollbar-item {
+          min-width: calc(25% - 22.5px);
+        }
+
+        .section { padding-block: nth($size , 19 ) }
+
+
+        /* HEADER */
+
+        .header {
+          position: relative;
+          min-height: nth($size , 2 );
+        }
+        
+        .header-bottom {
+          position: absolute;
+          top: nth($size , 3 ) ;
+          left: 0;
+          width: 100%;
+          background-color: nth($colors , 4 );
+          padding-block: nth($size , 13 );
+          box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50);
+        }
+        
+        .header-bottom .container {
+          display:flex;
+          background-color: nth($colors , 4 );
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .header-bottom::before {
+          width: nth($size , 34 );
+        }
+      
+        .navbar-link {
+          font-size: nth($rem , 4 );
+          padding-inline: nth($size , 29 );
+          text-align: center;
+          width: nth($size , 25 );
+        }
+      
+        /* INICIO */
+      
+        .hero .container {
+          grid-template-columns: 1fr 1fr;
+        }
+
+
+        /*NOSOTROS*/
+
+        .section-wrapper {
+          margin-block-start: nth($size , 27 );
+          position: relative;
+          background-repeat: no repeat;
+        }
+
+        
+        .video{
+          display: flex;
+          justify-content: center;
+          padding: 0;
+          margin: 0;
+        }
+      
+        /* JUEGOS */
+
+        .featured-game{
+          background-image: nth($img , 2 );
+          background-repeat: repeat;
+          margin-block-start: nth($size , 26 );
+        }
+
+
+        .featured-game {
+          .has-scrollbar {
+            padding-block-end: 0;
+            
+          }
+      
+          .scrollbar-item {
+            min-width: 25%;
+          }
+        }
+      
+        /* FOOTER */
+      
+        .footer .container {
+          grid-template-columns: 1fr 0.7fr 0.7fr 1fr;
+          display: flex;
+          margin-block-start: nth($size , 29 );
+        }
+      
+      }
+      
+  

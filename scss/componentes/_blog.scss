@@ -1,0 +1,106 @@
+
+/*BLOG*/
+.blog {
+    background: linear-gradient(rgba(21, 21, 46, 0.5), rgba(21, 21, 46, 0.5)), nth($img , 3 ) no-repeat center;;
+    position: relative;
+    margin-block-start: nth($size , 19 );
+  }
+  
+  
+  
+  // BLOG
+  .blog {
+    .section-title {
+      color: nth($colors , 1 );
+    }
+  
+    .section-text {
+      color: nth($colors , 8 );
+      margin-block: nth($size , 16 ) nth($size , 17 );
+    }
+  
+    .img-cover {
+      border-radius: nth($rem , 2 );
+    }
+  
+    &-list {
+      display: grid;
+      gap: nth($size , 16 );
+    }
+  
+    &-card {
+      .card-banner {
+        margin-block-end: nth($size , 14 );
+      }
+  
+      .card-meta-list {
+        display: flex;
+        align-items: center;
+        gap: nth($size , 12 );
+      }
+    }
+  }
+  
+
+  .blog-card {
+    .card-meta-item {
+      display: flex;
+      align-items: center;
+      gap: nth($size , 6 );
+      color: nth($colors , 6 );
+      font-size: nth($rem , 5 );
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: nth($size , 2 );
+  
+      a.item-text {
+        transition: 0.25s ease;
+      }
+  
+      a.item-text:is(:hover, :focus) {
+        color: nth($colors , 2 );
+      }
+    }
+  
+    .card-title {
+      color: nth($colors , 1 );
+      font-size: nth($rem , 7 );
+      font-family: nth($font , 1 ), nth($font , 2 );
+      font-weight: 800;
+      text-transform: uppercase;
+      line-height: nth($size , 4 );
+      margin-block: nth($size , 9 ) nth($size , 10 );
+      transition: 0.25s ease;
+  
+      &:is(:hover, :focus) {
+        color: nth($colors , 2 );
+      }
+    }
+  
+    .card-text {
+      color: nth($colors , 8 );
+      font-size: nth($rem , 4 );
+      font-weight: 500;
+      line-height: 1.8;
+      margin-block-end: nth($size , 10 );
+    }
+  }
+  
+  
+  .blog-card {
+    .card-link {
+      color: nth($colors , 2 );
+      font-size: nth($rem , 6 );
+      font-weight: 500;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: nth($size , 5 );
+      transition: 0.25s ease;
+  
+      &:is(:hover, :focus) {
+        color: nth($colors , 2 );
+      }
+    }
+  }
+  

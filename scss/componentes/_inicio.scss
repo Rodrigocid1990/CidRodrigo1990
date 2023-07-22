@@ -1,0 +1,40 @@
+
+// INICIO
+.hero-banner {
+    display: none;
+  }
+  
+  .hero {
+    padding: nth($size , 17 );
+    margin-block-start: nth($size , 19 );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    min-height: 80vh;
+    display: grid;
+    align-items: center;
+  }
+  
+  .hero-subtitle {
+    color: nth($colors , 2 );
+    font-size: nth($rem , 6 );
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .hero-title {
+    margin-block: nth($size , 10 ),nth($size , 23 );
+  }
+  
+  .hero-text {
+    color: nth($colors , 12 );
+    margin-block-end: nth($size , 24 );
+    text-align: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  

@@ -1,0 +1,26 @@
+.navbar {
+    background-color: nth($colors , 1 );
+    @media (max-width: 576px) {
+        padding: nth($size , 12 ) !important;
+    }
+}
+
+.navbarNav {
+    flex-direction: row;}
+
+  
+
+.navbar-item{
+    font-family: nth($font , 1 ), nth($font , 2 );
+    font-weight: 700;
+    font-size: nth($size , 12 );
+    color: nth($colors , 5 );
+}
+
+.navbar-link:hover{
+    color: nth($colors , 1 ) !important;
+}
+
+.navbar-link:active{
+    color: nth($colors , 2 ) !important;
+}
