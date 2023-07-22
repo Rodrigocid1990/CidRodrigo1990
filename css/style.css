@@ -135,7 +135,7 @@ a:active span {
 }
 
 .section-title::after {
-  content: url(../images/subrayado-título.png);
+  content: url(../images/subrayado-título.jpg);
   position: absolute;
   top: 100%;
   left: 50%;
@@ -263,7 +263,7 @@ a:active span {
 /*NOSOTROS*/
 .section-wrapper {
   position: relative;
-  background-image: url("../images/seccion-nosotros-juegos.png");
+  background-image: url("../images/seccion-nosotros-juegos.jpg");
   background-repeat: no-repeat;
   background-color: hsla(258, 51%, 23%, 0.75);
   margin-block-start: 140px;
@@ -287,7 +287,7 @@ a:active span {
 
 /*JUEGOS*/
 .featured-game {
-  background-image: url("../images/seccion-nosotros-juegos.png");
+  background-image: url("../images/seccion-nosotros-juegos.jpg");
   background-repeat: no-repeat;
   margin-block-start: 90px;
 }
@@ -1049,7 +1049,7 @@ a:active span {
   }
   /* JUEGOS */
   .featured-game {
-    background-image: url("../images/seccion-nosotros-juegos.png");
+    background-image: url("../images/seccion-nosotros-juegos.jpg");
     background-repeat: repeat;
     margin-block-start: 160px;
   }

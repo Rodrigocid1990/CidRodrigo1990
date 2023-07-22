@@ -145,7 +145,7 @@ input, button {
   }
   
   .section-title::after {
-    content: nth($img , 1 );
+    content: nth($img , 1);
     position: absolute;
     top: 100%;
     left: 50%;
