@@ -586,7 +586,7 @@ a:active span {
   }
   .h1 {
     font-family: "Rubik Puddles", cursive;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     line-height: 1;
     text-align: center;
   }
@@ -594,7 +594,8 @@ a:active span {
     font-family: "Lilita One", cursive;
   }
   .h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+    display: grid;
   }
   /*NAVBAR*/
   .logo {
@@ -1044,7 +1045,7 @@ a:active span {
   .featured-game {
     background-image: url("../images/seccion-nosotros-juegos.png");
     background-repeat: repeat;
-    margin-block-start: 1230px;
+    margin-block-start: 160px;
   }
   .featured-game .has-scrollbar {
     padding-block-end: 0;

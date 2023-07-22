@@ -20,7 +20,7 @@
 
     .h1{
       font-family: nth($font2 , 1 ), nth($font2 , 2 );
-      letter-spacing: nth($size , 5 );
+      letter-spacing: nth($size , 4 );
       line-height: 1;
       text-align: center;
     }
@@ -28,7 +28,8 @@
     p{
       font-family: nth($font , 1 ), nth($font , 2 );
     }
-    .h1 { font-size: nth($rem , 9 ); }
+    .h1 { font-size: nth($rem , 8 );
+      display: grid; }
 
 
     /*NAVBAR*/
@@ -627,7 +628,7 @@
         .featured-game{
           background-image: nth($img , 2 );
           background-repeat: repeat;
-          margin-block-start: nth($size , 33 );
+          margin-block-start: nth($size , 27 );
         }
 
 
