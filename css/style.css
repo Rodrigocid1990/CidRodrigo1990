@@ -47,6 +47,7 @@ body {
   line-height: 1, 9;
 }
 
+/*TITULOS Y SUBTITULOS*/
 .h1 {
   font-size: 90px;
   color: white;
@@ -103,6 +104,7 @@ a:active span {
   transform: scale(0.9);
 }
 
+/*BOTON VIOLETA*/
 .skewBg {
   position: relative;
   z-index: 1;
@@ -140,9 +142,11 @@ a:active span {
   transform: translateX(-50%);
 }
 
+/*HEADER*/
 .header {
   position: relative;
   min-height: 1px;
+  /*NAVBAR*/
 }
 .header .header-bottom {
   position: absolute;
@@ -188,6 +192,7 @@ a:active span {
   transition: opacity 0.5s;
 }
 
+/*NAVBAR*/
 .navbar {
   background-color: white;
 }
@@ -216,6 +221,7 @@ a:active span {
   color: hsla(258, 96%, 67%, 0.75) !important;
 }
 
+/*INICIO*/
 .hero-banner {
   display: none;
 }

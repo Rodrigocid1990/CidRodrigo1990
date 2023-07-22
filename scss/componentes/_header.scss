@@ -50,7 +50,7 @@ input, button {
   
   
   
-  // TITULOS Y SUBTITULOS
+  /*TITULOS Y SUBTITULOS*/
   .h1 {
     font-size: nth($size , 18 );
     color: nth($colors , 1 );
@@ -112,6 +112,7 @@ input, button {
     }
   }
   
+  /*BOTON VIOLETA*/
   
   .skewBg {
     position: relative;
@@ -152,6 +153,8 @@ input, button {
   }
   
   
+  /*HEADER*/
+
 
   .header {
     position: relative;
@@ -179,6 +182,8 @@ input, button {
       font-family: nth($font , 1 ),nth($font , 2 );
       font-size: nth($rem , 8 );
     }
+
+    /*NAVBAR*/
   
     .navbar-toggler {
       color: nth($colors , 1 );
